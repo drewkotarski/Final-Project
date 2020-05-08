@@ -63,3 +63,57 @@ if (programInput == programChoices[0]) {
 ```
 In this snippet I create an array and using ``` programChoices[(Math.floor(Math.random() * programChoices.length))] ``` it randomly chooses a value in the array. Then based on what value it chooses I assigned it either rock, paper, or scissors. 
 
+# Comparison:  <h1>
+```
+var compare = function(choice1, choice2) {
+  if (choice1 === choice2) {
+    return tieSong.play() && Tie();
+  }
+  if (choice1 === "rock") {
+    if (choice2 === "scissors") {
+      document.write('Good Job, rock beats scissors');
+      winSong.play();
+      Rock();
+
+
+
+    } else {
+      document.write('computer wins, paper beats rock');
+      loseSong.play();
+      Paper();
+    }
+  }
+  if (choice1 === "paper") {
+    if (choice2 === "rock") {
+      document.write('nice job, paper beats rock');
+      winSong.play();
+      Paper();
+
+    } else {
+      document.write(':( unfortunate, scissors beats paper');
+      loseSong.play();
+      Scissors();
+
+    }
+  }
+  if (choice1 === "scissors") {
+    if (choice2 === "rock") {
+      document.write('dang, rock beats scissors');
+      loseSong.play();
+      Rock();
+
+    } else {
+      document.write('woo hoo scissors beats paper');
+      winSong.play();
+      Scissors();
+
+    }
+  }
+};
+```
+In this snippet this where my function compare(), compares the user’s input to the program's random selection. Based on the two choices I invoke the audio using the play() method. I also call my Image functions so that it displays an image of the winner whether that be an image of a rock paper or scissor. 
+
+# What I wanted to achieve but didn't: <h1>
+
+
+In  my proposal I wanted to display an image and audio for both the program and the user but I ended up only displaying an image of the winner and an audio that either told the user they won or that they lost. I also would have liked to animate an image of the user choice and the program choice but I found that to be difficult. I spent a lot of time trying to figure out how to upload my own audio files because the loadSound did not work for me(I probably did something wrong). I spent a lot of time looking up different ways to have audio play in javascript and I finally got it to work by using the new Audio() constructor. Uploading Images also took a lot of time for me to figure out. I don’t know what I was doing wrong but the loadImage did not display an image on the webpage. I found my solution by once again spending a lot of time looking up different ways to display images in javascript, and through trial and error I found a solution. 

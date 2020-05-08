@@ -48,3 +48,18 @@ function Scissors() {
 }
 ```
   When these functions are called they display an image. The variable is initialized with the call to the createElement function using the image type specified by “img”. In HTML “img” is the designation of an image tag name in an image element. We designate a source file for the image by assigning the src the file name of the image. SRC is an image attribute in HTML. What these two lines of code do is the equivalent of creating a HTML code. The call to appendchild puts the image element inside the body element where it can be displayed. The body element is where all the content is displayed on an HTML page. 
+
+# Random :  <h1> 
+```
+var programChoices = [0, 1, 2];
+var programInput = programChoices[(Math.floor(Math.random() * programChoices.length))]
+if (programInput == programChoices[0]) {
+  programInput = "rock";
+} else if (programInput == programChoices[1]) {
+  programInput = "paper";
+} else {
+  programInput = "scissors";
+}
+```
+In this snippet I create an array and using ``` programChoices[(Math.floor(Math.random() * programChoices.length))] ``` it randomly chooses a value in the array. Then based on what value it chooses I assigned it either rock, paper, or scissors. 
+

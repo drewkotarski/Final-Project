@@ -123,4 +123,5 @@ In this snippet this where my function compare(), compares the user’s input to
 
 In  my proposal I wanted to display an image and audio for both the program and the user but I ended up only displaying an image of the winner and an audio that either told the user they won or that they lost. I also would have liked to animate an image of the user choice and the program choice but I found that to be difficult. I spent a lot of time trying to figure out how to upload my own audio files because the loadSound did not work for me(I probably did something wrong). I spent a lot of time looking up different ways to have audio play in javascript and I finally got it to work by using the new Audio() constructor. Uploading Images also took a lot of time for me to figure out. I don’t know what I was doing wrong but the loadImage did not display an image on the webpage. I found my solution by once again spending a lot of time looking up different ways to display images in javascript, and through trial and error I found a solution. 
 
-
+# Deployment:  <h1>
+https://drewkotarski.github.io/Final-Project/
